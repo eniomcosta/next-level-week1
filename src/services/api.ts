@@ -9,3 +9,7 @@ export const getItems = () => {
     return response.data;
   });
 };
+
+export const savePoint = async (data: Object) => {
+  return await api.post("points", data);
+};
